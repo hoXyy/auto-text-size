@@ -30,7 +30,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc & tsc --project tsconfig.cjs.json",
-    "watch": "tsc-watch --onSuccess \"yalc push\""
+    "watch": "tsc-watch --onSuccess \"yalc push\"",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": "*"
